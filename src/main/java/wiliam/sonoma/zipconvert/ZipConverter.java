@@ -3,7 +3,8 @@ package wiliam.sonoma.zipconvert;
 import william.sonoma.zipconvert.util.ListTransformer;
 import william.sonoma.zipconvert.util.Range;
 import william.sonoma.zipconvert.util.RangeSorter;
-
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,6 +16,8 @@ import java.util.List;
 public class ZipConverter {
 
     public static void main(String[] args) {
+        Logger logger = LoggerFactory.getLogger(ZipConverter.class);
+        logger.info("Hello World");
 
         /*
         If the input = [94133,94133] [94200,94299] [94600,94699]
